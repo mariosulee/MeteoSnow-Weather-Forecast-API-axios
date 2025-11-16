@@ -1,0 +1,60 @@
+.form, .field, .submit{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-left: 3rem;
+    font-size: large;
+
+}
+
+
+.form input[type="text"] , .form select{
+    padding:1rem;
+    background-color:transparent;
+    border:.3rem solid white;
+    color:white;
+    font-size:1.8rem;
+    font-weight: 400;
+    border-radius: 1rem;
+
+}
+
+.form select option {
+    color: black; 
+    background-color: white; 
+}
+
+.submit{
+    background-color: var(--primary);
+    border:none;
+    color:white;
+    font-weight: 700;
+    font-size: 1.7rem;
+    text-transform: uppercase;
+    cursor:pointer;
+    padding:1rem;
+    border-radius:1rem;
+    margin-top:3rem
+}
+
+
+@media (max-width: 480px) {
+    .form, .field {
+        margin-top: 1rem;
+        gap: 1rem;
+        margin-left: 0; /* más centrado en móvil */
+        font-size: 1rem;
+    }
+
+    .form input[type="text"], 
+    .form select {
+        padding: 0.5rem;
+        font-size: 1rem;
+    }
+
+    .submit {
+        font-size: 1rem;
+        margin-bottom: 4rem;
+        margin-left: 0;
+    }
+}

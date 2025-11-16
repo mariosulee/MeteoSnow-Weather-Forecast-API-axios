@@ -1,0 +1,26 @@
+.title{
+    font-size:2rem;
+}
+
+.container{
+    width: 95%;
+    max-width: 100rem;  /*100rem son 1000 pixeles*/
+    margin:0_auto;  /*centrar horizontalmente*/
+;
+}
+
+
+@media(min-width:768px){   /*RESPONSIVE DESIGN*/
+    .container{
+        display:grid;
+        grid-template-columns:repeat(2,1fr);
+        align-items:center;
+        gap:5rem;
+        margin-top: 7rem;
+    }
+    .title{
+        font-size: 7rem;
+        align-items: center;
+
+    }
+}
